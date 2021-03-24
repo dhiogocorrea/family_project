@@ -1,32 +1,35 @@
 export const title = () => {
-  return 'Trajetórias de família';
+  return 'Desbravadores do Triângulo Mineiro';
 };
 
 export const subtitle = () => {
-  return 'Entender nossas origens e imaginar que um dia poderemos percorrer as ruas que nossos antepassados viveram, são sonhos, que com certeza um dia poderemos conquistar.';
+  return 'A epopéia da família Carneiro, Flávio e Honório no Oeste Mineiro.';
 };
 
 export const families = () => {
   return [
     {
       key: 1,
-      title: 'Velludo',
-      description: 'Vindos da ilha da madeira, chegaram ao Brasil em 28/10/1888.',
-      image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_velludo.jpg',
+      title: 'Carneiro',
+      description:
+        'Descendentes de portugueses da região Filgueiras, do norte de Portugal que se fixaram em São José Del Rei (atual Tiradentes) em Minas Gerais. ',
+      image: 'https://carneiro-flavio-honorio.s3.amazonaws.com/brasao_carneiro.jpg',
       pdfUrl: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/Genealogia%20das%20Fam%C3%ADlias%20Velludo.pdf',
     },
     {
       key: 2,
-      title: 'Cicci',
-      description: 'Salvatore e Carmella chegaram no Brasil em 16/08/1896, vindos de Pettorano Sul Gizio, Itália.',
-      image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/cicci_brasao.png',
+      title: 'Flávio',
+      description:
+        'Originários de Ilha Graciosa, Arquipélago dos Açores, Portugal, após breve passagem por Rio Grande do Sul (RS), fixaram-se em São João Del Rey (MG), atual Tiradentes. ',
+      image: 'https://carneiro-flavio-honorio.s3.amazonaws.com/brasao_flavio.png',
       pdfUrl: 'https://sebrae-lis.s3.amazonaws.com/14383.pdf',
     },
     {
       key: 3,
-      title: 'Corrêa',
-      description: 'A família veio de Coimbra, das freguesias de São Pedor de Alva e Lousã, em Portugal.',
-      image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_correa.jpg',
+      title: 'Honório',
+      description:
+        'Desconhece-se suas origens mas fixaram-se em Dores de Santa Juliana, distrito de Araxá, em meados do século XIX. ',
+      image: 'https://carneiro-flavio-honorio.s3.amazonaws.com/brasao_honorio.jpg',
       pdfUrl: 'https://sebrae-lis.s3.amazonaws.com/14383.pdf',
     },
   ];
