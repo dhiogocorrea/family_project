@@ -1,13 +1,10 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import {Button, Link, Typography, Container, Card, CardMedia, CardContent, CssBaseline} from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import {makeStyles} from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+
+import Mail from '@material-ui/icons/Mail';
+
 import {useHistory} from 'react-router-dom';
 
 import {title, subtitle, families} from '../../core/utils/site_variables';
@@ -37,6 +34,10 @@ const useStyles = makeStyles(theme => ({
   },
   cardContent: {
     flexGrow: 1,
+  },
+  btn: {
+    marginTop: theme.spacing(2),
+    fontFamily: 'Times New Roman',
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -87,6 +88,15 @@ export default function Home() {
               </Grid>
             ))}
           </Grid>
+          <Button
+            onClick={() => history.push('/mail')}
+            className={classes.btn}
+            variant="contained"
+            color="primary"
+            startIcon={<Mail />}
+          >
+            Enviar mensagem para a autor(a)
+          </Button>
         </Container>
       </main>
     </React.Fragment>
