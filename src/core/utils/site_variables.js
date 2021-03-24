@@ -19,7 +19,7 @@ export const families = () => {
     {
       key: 2,
       title: 'Cicci',
-      description: 'Salvatore e Carmella chegaram no Brasil em 16/08/1896, vindos de Pettorano Sul Gizio, Itália.',
+      description: 'Salvatore e Carmela chegaram no Brasil em 16/08/1896, vindos de Pettorano Sul Gizio, Itália.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/cicci_brasao.png',
       pdfUrl:
         'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=72',
@@ -27,7 +27,7 @@ export const families = () => {
     {
       key: 3,
       title: 'Corrêa',
-      description: 'A família veio de Coimbra, das freguesias de São Pedor de Alva e Lousã, em Portugal.',
+      description: 'A família veio de Coimbra, das freguesias de São Pedro de Alva e Lousã, em Portugal.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_correa.jpg',
       pdfUrl:
         'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=146',
