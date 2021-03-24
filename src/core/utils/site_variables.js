@@ -11,7 +11,7 @@ export const families = () => {
     {
       key: 1,
       title: 'Velludo',
-      description: 'Vindos da ilha da madeira, chegaram ao Brasil em 12/10/1888.',
+      description: 'Vindos da ilha da madeira, chegaram ao Brasil em 28/10/1888.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_velludo.jpg',
       pdfUrl: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/Genealogia%20das%20Fam%C3%ADlias%20Velludo.pdf',
     },
