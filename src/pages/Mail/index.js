@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import {makeStyles} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
 
-import {useHistory, useLocation} from 'react-router-dom';
-import {Button, IconButton, TextField} from '@material-ui/core';
+import {useHistory} from 'react-router-dom';
+import {IconButton} from '@material-ui/core';
 
 import ArrowBack from '@material-ui/icons/ArrowBack';
-import Mail from '@material-ui/icons/Mail';
 import Iframe from 'react-iframe';
+
+import {formsUrl} from '../../core/utils/site_variables';
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -38,8 +38,6 @@ const Family = () => {
   const classes = useStyles();
   const history = useHistory();
 
-  const formsUrl = 'https://forms.gle/ShBVAUTwErb5ujnx6';
-
   return (
     <React.Fragment>
       <CssBaseline />
@@ -59,7 +57,7 @@ const Family = () => {
           </Container>
         </div>
         <Container className={classes.mainGrid} maxWidth="lg">
-          <Iframe url={formsUrl} width="100%" height="800px" />
+          <Iframe url={formsUrl()} width="100%" height="800px" />
         </Container>
       </main>
     </React.Fragment>

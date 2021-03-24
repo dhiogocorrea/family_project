@@ -10,6 +10,8 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import {useHistory} from 'react-router-dom';
 
+import {title, subtitle, families} from '../../core/utils/site_variables';
+
 const useStyles = makeStyles(theme => ({
   icon: {
     marginRight: theme.spacing(2),
@@ -42,34 +44,6 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const title = 'Trajetórias de família';
-const subtitle =
-  'Entender nossas origens e imaginar que um dia poderemos percorrer as ruas que nossos antepassados viveram, são sonhos, que com certeza um dia poderemos conquistar.';
-
-const families = [
-  {
-    key: 1,
-    title: 'Velludo',
-    description: 'Vindos da ilha da madeira, chegaram ao Brasil em 12/10/1888.',
-    image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_velludo.jpg',
-    pdfUrl: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/Genealogia%20das%20Fam%C3%ADlias%20Velludo.pdf',
-  },
-  {
-    key: 2,
-    title: 'Cicci',
-    description: 'Salvatore e Carmella chegaram no Brasil em 16/08/1896, vindos de Pettorano Sul Gizio, Itália.',
-    image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/cicci_brasao.png',
-    pdfUrl: 'https://sebrae-lis.s3.amazonaws.com/14383.pdf',
-  },
-  {
-    key: 3,
-    title: 'Corrêa',
-    description: 'A família veio de Coimbra, das freguesias de São Pedor de Alva e Lousã, em Portugal.',
-    image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_correa.jpg',
-    pdfUrl: 'https://sebrae-lis.s3.amazonaws.com/14383.pdf',
-  },
-];
-
 export default function Home() {
   const history = useHistory();
   const classes = useStyles();
@@ -86,16 +60,16 @@ export default function Home() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              {title}
+              {title()}
             </Typography>
             <Typography variant="h4" align="center" color="textSecondary" paragraph>
-              {subtitle}
+              {subtitle()}
             </Typography>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
-            {families.map(card => (
+            {families().map(card => (
               <Grid item key={card.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia height="240px" component="img" className={classes.cardMedia} src={card.image} />
