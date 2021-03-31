@@ -7,7 +7,7 @@ export const subtitle = () => {
 };
 
 export const cardBgColor = () => {
-  return '#C59D5F';
+  return '#d4af37';
 };
 
 export const families = () => {
