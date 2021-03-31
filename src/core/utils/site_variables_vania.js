@@ -6,6 +6,10 @@ export const subtitle = () => {
   return 'Entender nossas origens e imaginar que um dia poderemos percorrer as ruas que nossos antepassados viveram, são sonhos, que com certeza um dia poderemos conquistar.';
 };
 
+export const cardBgColor = () => {
+  return '#fff5e1';
+};
+
 export const families = () => {
   return [
     {
