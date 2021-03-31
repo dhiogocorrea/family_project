@@ -75,7 +75,7 @@ export default function Home() {
                 <Card className={classes.card}>
                   <CardMedia height="240px" component="img" className={classes.cardMedia} src={card.image} />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h4" component="h2">
                       <Link style={{cursor: 'pointer'}} onClick={() => goToFamily(card)}>
                         {card.title}
                       </Link>
