@@ -74,7 +74,7 @@ export default function Home() {
             {families().map(card => (
               <Grid item key={card.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                  <CardMedia height="240px" component="img" className={classes.cardMedia} src={card.image} />
+                  <CardMedia height="360px" component="img" className={classes.cardMedia} src={card.image} />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h4" component="h2">
                       <Link style={{cursor: 'pointer'}} onClick={() => goToFamily(card)}>
