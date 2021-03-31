@@ -7,7 +7,8 @@ import Mail from '@material-ui/icons/Mail';
 
 import {useHistory} from 'react-router-dom';
 
-import {title, subtitle, families} from '../../core/utils/site_variables';
+import {title, subtitle, families, cardBgColor} from '../../core/utils/site_variables_vania';
+//import {title, subtitle, families, cardBgColor} from '../../core/utils/site_variables_ailton';
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -56,7 +57,7 @@ export default function Home() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <main style={{backgroundColor: '#fff5e1'}}>
+      <main style={{backgroundColor: cardBgColor()}}>
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">

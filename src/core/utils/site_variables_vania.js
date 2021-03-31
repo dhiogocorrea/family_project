@@ -6,6 +6,10 @@ export const subtitle = () => {
   return 'A epopéia da família Carneiro, Flávio e Honório no Oeste Mineiro.';
 };
 
+export const cardBgColor = () => {
+  return '#fff5e1';
+};
+
 export const families = () => {
   return [
     {
