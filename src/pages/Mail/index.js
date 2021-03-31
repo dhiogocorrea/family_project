@@ -10,7 +10,7 @@ import {IconButton} from '@material-ui/core';
 import ArrowBack from '@material-ui/icons/ArrowBack';
 import Iframe from 'react-iframe';
 
-import {formsUrl} from '../../core/utils/site_variables';
+import {formsUrl} from '../../core/utils/site_variables_vania';
 
 const useStyles = makeStyles(theme => ({
   icon: {
