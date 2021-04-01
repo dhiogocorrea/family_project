@@ -60,6 +60,7 @@ const Family = () => {
           </Container>
         </div>
         <Container className={classes.mainGrid} maxWidth="lg">
+          <Typography>Dica: Para fazer buscas no arquivo, aperte Crtl+F e realize sua busca.</Typography>
           <Iframe url={family && family.pdfUrl} width="100%" height="800px" id="familyPdf" />
           <Button
             onClick={() => history.push('/mail', {familyName: family.title})}
