@@ -69,7 +69,7 @@ const Family = () => {
             color="primary"
             startIcon={<Mail />}
           >
-            Enviar mensagem para a autor(a)
+            Enviar mensagem para a autora
           </Button>
         </Container>
       </main>
