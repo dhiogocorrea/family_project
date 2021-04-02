@@ -102,7 +102,7 @@ export default function Home() {
             color="primary"
             startIcon={<Mail />}
           >
-            Enviar mensagem para a autor
+            Enviar mensagem para o autor
           </Button>
         </Container>
       </main>

@@ -24,7 +24,7 @@ export const families = () => {
       key: 2,
       title: 'Flávio',
       description:
-        'Originários de Ilha Graciosa, Arquipélago dos Açores, Portugal, após breve passagem por Rio Grande do Sul (RS), fixaram-se em São João Del Rey (MG), atual Tiradentes. ',
+        'Originários de Ilha Graciosa, Arquipélago dos Açores, Portugal, após breve passagem por Rio Grande do Sul (RS), fixaram-se em São José Del Rey (MG), atual Tiradentes. ',
       image: 'https://carneiro-flavio-honorio.s3.amazonaws.com/brasao_flavio.png',
       pdfUrl: 'https://carneiro-flavio-honorio.s3.amazonaws.com/Fam%C3%ADlias+Fl%C3%A1vio_compressed.pdf',
     },
