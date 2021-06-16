@@ -70,6 +70,9 @@ export default function Home() {
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
+          <Typography variant="h4" align="center" paragraph>
+            Clique no nome da família para acessar o conteúdo!
+          </Typography>
           <Grid container spacing={4}>
             {families().map(card => (
               <Grid item key={card.key} xs={12} sm={6} md={4}>
