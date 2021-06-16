@@ -71,7 +71,7 @@ export default function Home() {
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           <Typography variant="h4" align="center" paragraph>
-            Clique no nome da família para acessar o conteúdo!
+            Clique no nome da família para abrir o livro!
           </Typography>
           <Grid container spacing={4}>
             {families().map(card => (
@@ -105,7 +105,7 @@ export default function Home() {
             color="primary"
             startIcon={<Mail />}
           >
-            Enviar mensagem para a autora
+            Enviar seus comentários a autora
           </Button>
         </Container>
       </main>
