@@ -26,7 +26,7 @@ export const families = () => {
       description: 'Salvatore e Carmela chegaram no Brasil em 16/08/1896, vindos de Pettorano Sul Gizio, Itália.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/cicci_brasao.png',
       pdfUrl:
-        'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=72',
+        'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=82',
     },
     {
       key: 3,
@@ -34,7 +34,7 @@ export const families = () => {
       description: 'A família veio de Coimbra, das freguesias de São Pedro de Alva e Lousã, em Portugal.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_correa.jpg',
       pdfUrl:
-        'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=146',
+        'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=157',
     },
   ];
 };
