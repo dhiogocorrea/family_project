@@ -11,30 +11,30 @@ export const cardBgColor = () => {
 };
 
 export const families = () => {
+  let p1 = 4;
+  let p2 = 82;
+  let p3 = 157;
   return [
     {
       key: 1,
       title: 'Velludo',
       description: 'Vindos da ilha da madeira, chegaram ao Brasil em 28/10/1888.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_velludo.jpg',
-      pdfUrl:
-        'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=4',
+      pdfUrl: `https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=${p1}`,
     },
     {
       key: 2,
       title: 'Cicci',
       description: 'Salvatore e Carmela chegaram no Brasil em 16/08/1896, vindos de Pettorano Sul Gizio, Itália.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/cicci_brasao.png',
-      pdfUrl:
-        'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=82',
+      pdfUrl: `https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=${p2}`,
     },
     {
       key: 3,
       title: 'Corrêa',
       description: 'A família veio de Coimbra, das freguesias de São Pedro de Alva e Lousã, em Portugal.',
       image: 'https://velludo-cicci-correa.s3.us-east-1.amazonaws.com/brasao_correa.jpg',
-      pdfUrl:
-        'https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=157',
+      pdfUrl: `https://velludo-cicci-correa.s3.amazonaws.com/Genealogia+das+Fam%C3%ADlias+Velludo+Cicci+e+Corr%C3%AAa.pdf#page=${p3}`,
     },
   ];
 };
