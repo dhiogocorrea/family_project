@@ -11,9 +11,9 @@ export const cardBgColor = () => {
 };
 
 export const families = () => {
-  let p1 = 7;
-  let p2 = 555;
-  let p3 = 681;
+  let p1 = 1;
+  let p2 = 674;
+  let p3 = 801;
   return [
     {
       key: 1,
