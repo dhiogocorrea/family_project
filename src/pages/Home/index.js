@@ -1,16 +1,29 @@
-import React from 'react';
-import {Button, Link, Typography, Container, Card, CardMedia, CardContent, CssBaseline} from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import {makeStyles} from '@material-ui/core/styles';
+import React from "react";
+import {
+  Button,
+  Link,
+  Typography,
+  Container,
+  Card,
+  CardMedia,
+  CardContent,
+  CssBaseline,
+} from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
 
-import Mail from '@material-ui/icons/Mail';
+import Mail from "@material-ui/icons/Mail";
 
-import {useHistory} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
-import {title, subtitle, families, cardBgColor} from '../../core/utils/site_variables_vania';
-//import {title, subtitle, families, cardBgColor} from '../../core/utils/site_variables_ailton';
+import {
+  title,
+  subtitle,
+  families,
+  cardBgColor,
+} from "../../core/utils/site_variables_vania";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
   },
@@ -26,19 +39,19 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
   },
   cardMedia: {
-    paddingTop: '5.25%', // 16:9
+    paddingTop: "5.25%", // 16:9
   },
   cardContent: {
     flexGrow: 1,
   },
   btn: {
     marginTop: theme.spacing(2),
-    fontFamily: 'Times New Roman',
+    fontFamily: "Times New Roman",
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -50,47 +63,61 @@ export default function Home() {
   const history = useHistory();
   const classes = useStyles();
 
-  const goToFamily = family => {
-    history.push('/family', {data: family});
+  const goToFamily = (family) => {
+    history.push("/family", { data: family });
   };
 
   return (
     <React.Fragment>
       <CssBaseline />
-      <main style={{backgroundColor: cardBgColor()}}>
+      <main style={{ backgroundColor: cardBgColor() }}>
         {/* Hero unit */}
         <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+          <Container maxWidth='sm'>
+            <Typography
+              component='h1'
+              variant='h2'
+              align='center'
+              color='textPrimary'
+              gutterBottom
+            >
               {title()}
             </Typography>
-            <Typography variant="h4" align="center" color="textSecondary" paragraph>
+            <Typography
+              variant='h4'
+              align='center'
+              color='textSecondary'
+              paragraph
+            >
               {subtitle()}
             </Typography>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
-          <Typography variant="h4" align="center" paragraph>
+        <Container className={classes.cardGrid} maxWidth='md'>
+          <Typography variant='h4' align='center' paragraph>
             Clique no nome da família para abrir o livro!
           </Typography>
-          <Grid container spacing={4}>
-            {families().map(card => (
-              <Grid item key={card.key} xs={12} sm={6} md={4}>
+          <Grid container spacing={2}>
+            {families().map((card) => (
+              <Grid item key={card.key} xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
                   <CardMedia
-                    height="240px"
-                    component="img"
-                    style={{objectFit: 'scale-down'}}
+                    height='170px'
+                    component='img'
+                    style={{ objectFit: "scale-down" }}
                     className={classes.cardMedia}
                     src={card.image}
                   />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h4" component="h2">
-                      <Link style={{cursor: 'pointer'}} onClick={() => goToFamily(card)}>
+                    <Typography gutterBottom variant='h4' component='h2'>
+                      <Link
+                        style={{ cursor: "pointer" }}
+                        onClick={() => goToFamily(card)}
+                      >
                         {card.title}
                       </Link>
                     </Typography>
-                    <Typography variant="h6" component="h3">
+                    <Typography variant='h6' component='h3'>
                       {card.description}
                     </Typography>
                   </CardContent>
@@ -99,10 +126,10 @@ export default function Home() {
             ))}
           </Grid>
           <Button
-            onClick={() => history.push('/mail')}
+            onClick={() => history.push("/mail")}
             className={classes.btn}
-            variant="contained"
-            color="primary"
+            variant='contained'
+            color='primary'
             startIcon={<Mail />}
           >
             Enviar seus comentários ao autor
